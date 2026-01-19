@@ -1,239 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>BlackLabel Sprinter Co | St. Louis Luxury Chauffeur</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BlackLabel Sprinter Co | Luxury Chauffeur Service – St. Louis</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background-color: #000;
-      color: #fff;
-    }
+<style>
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #000;
+    color: #fff;
+}
 
-    header {
-      background-color: #000;
-      padding: 80px 20px;
-      text-align: center;
-    }
+header {
+    text-align: center;
+    padding: 60px 20px;
+    background: radial-gradient(circle at top, #1a1a1a, #000);
+}
 
-    header img {
-      width: 140px;
-      margin-bottom: 20px;
-    }
+.logo {
+    width: 350px;
+    height: auto;
+    margin-bottom: 20px;
+}
 
-    header h1 {
-      color: gold;
-      font-size: 42px;
-      margin: 10px 0;
-      letter-spacing: 2px;
-    }
+h1 {
+    font-size: 42px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
 
-    header p {
-      color: #ccc;
-      font-size: 18px;
-      max-width: 850px;
-      margin: auto;
-    }
+.gold {
+    color: gold;
+}
 
-    .btn {
-      display: inline-block;
-      margin-top: 25px;
-      padding: 14px 32px;
-      background-color: gold;
-      color: #000;
-      text-decoration: none;
-      border-radius: 4px;
-      font-weight: bold;
-    }
+section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
 
-    section {
-      padding: 60px 20px;
-      max-width: 1100px;
-      margin: auto;
-    }
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    border-bottom: 2px solid gold;
+    display: inline-block;
+    padding-bottom: 10px;
+}
 
-    h2 {
-      color: gold;
-      text-align: center;
-      margin-bottom: 30px;
-      font-size: 32px;
-    }
+.fleet, .reviews, .sponsors {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 20px;
-    }
+.card {
+    background: #111;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255,215,0,0.15);
+    text-align: center;
+}
 
-    .card {
-      background-color: #111;
-      padding: 22px;
-      border-radius: 10px;
-      text-align: center;
-    }
+.card h3 {
+    color: gold;
+}
 
-    .card h3 {
-      color: gold;
-      margin-bottom: 10px;
-    }
+.contact {
+    text-align: center;
+}
 
-    .box {
-      width: 100%;
-      height: 180px;
-      background-color: #222;
-      border-radius: 8px;
-      margin-bottom: 12px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #777;
-      font-size: 14px;
-    }
+form {
+    max-width: 500px;
+    margin: auto;
+}
 
-    .review {
-      background-color: #111;
-      padding: 20px;
-      border-radius: 10px;
-      margin-bottom: 15px;
-    }
+input, textarea {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    background: #000;
+    border: 1px solid gold;
+    color: #fff;
+    border-radius: 6px;
+}
 
-    .contact {
-      background-color: #111;
-      padding: 40px 20px;
-      border-radius: 10px;
-      text-align: center;
-    }
+button {
+    background: gold;
+    color: #000;
+    border: none;
+    padding: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+    width: 100%;
+}
 
-    input, textarea {
-      width: 100%;
-      padding: 12px;
-      margin: 8px 0;
-      border-radius: 4px;
-      border: none;
-      font-size: 15px;
-    }
+button:hover {
+    opacity: 0.9;
+}
 
-    button {
-      width: 100%;
-      padding: 14px;
-      background-color: gold;
-      color: #000;
-      border: none;
-      border-radius: 4px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      color: #777;
-      background-color: #000;
-      font-size: 13px;
-    }
-  </style
->
+footer {
+    background: #000;
+    text-align: center;
+    padding: 30px;
+    font-size: 14px;
+    border-top: 1px solid #222;
+}
+</style>
 </head>
 
 <body>
 
 <header>
- <img src="logo.png" alt="BlackLabel Sprinter Co Logo" style="width:400px; height:auto;">
-  <h1>BlackLabel Sprinter Co.</h1>
-  <p>Luxury Chauffeur & Sprinter Van Transportation Serving St. Louis City, St. Louis County, St. Charles, Chesterfield, Clayton, Ladue, Ballwin & Surrounding Missouri Counties.</p>
-  <a href="#booking" class="btn">Request Booking</a>
+    <img src="logo.png" alt="BlackLabel Sprinter Co Logo" class="logo">
+    <h1>BLACKLABEL <span class="gold">SPRINTER CO.</span></h1>
+    <p>Luxury Chauffeur Transportation</p>
+    <p class="gold">St. Louis, Missouri & Surrounding Counties</p>
 </header>
+
 <section>
-  <h2>Our Services</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>Airport Transfers (STL)</h3>
-      <p>Professional luxury transportation to and from Lambert International Airport.</p>
+    <h2 class="section-title">Our Fleet</h2>
+    <div class="fleet">
+        <div class="card">
+            <h3>Luxury Sprinter Vans</h3>
+            <p>Executive seating, premium interiors, climate control, and privacy.</p>
+        </div>
+        <div class="card">
+            <h3>VIP Transport</h3>
+            <p>Perfect for corporate travel, airport transfers, and special events.</p>
+        </div>
+        <div class="card">
+            <h3>Chauffeur Driven</h3>
+            <p>Professional, licensed, and discreet drivers.</p>
+        </div>
     </div>
-    <div class="card">
-      <h3>Corporate & Executive Travel</h3>
-      <p>Executive chauffeur services for business professionals and teams.</p>
-    </div>
-    <div class="card">
-      <h3>VIP & Private Clients</h3>
-      <p>Discreet, secure transportation for high-profile individuals.</p>
-    </div>
-    <div class="card">
-      <h3>Events & Group Travel</h3>
-      <p>Luxury Sprinter service for weddings, concerts, sports and private events.</p>
-    </div>
-  </div>
 </section>
 
 <section>
-  <h2>Our Fleet</h2>
-  <div class="grid">
-    <div class="card">
-      <div class="box">Executive Sprinter</div>
-      <h3>Executive Sprinter Van</h3>
-      <p>Leather seating, Wi-Fi, ambient lighting, luxury interior.</p>
+    <h2 class="section-title">Client Reviews</h2>
+    <div class="reviews">
+        <div class="card">
+            <p>“Impeccable service and luxury experience.”</p>
+            <strong class="gold">— Corporate Client</strong>
+        </div>
+        <div class="card">
+            <p>“Best chauffeur service in St. Louis.”</p>
+            <strong class="gold">— Private Booking</strong>
+        </div>
+        <div class="card">
+            <p>“Professional, clean, and reliable.”</p>
+            <strong class="gold">— Event Client</strong>
+        </div>
     </div>
-    <div class="card">
-      <div class="box">Luxury SUV</div>
-      <h3>Black Luxury SUV</h3>
-      <p>Perfect for airport and executive transportation.</p>
-    </div>
-    <div class="card">
-      <div class="box">Group Sprinter</div>
-      <h3>Group Sprinter Van</h3>
-      <p>Spacious luxury seating for teams and groups.</p>
-    </div>
-  </div>
 </section>
 
 <section>
-  <h2>Gallery</h2>
-  <div class="grid">
-    <div class="box">Vehicle Photo</div>
-    <div class="box">Interior Photo</div>
-    <div class="box">Event Transport</div>
-    <div class="box">Chauffeur Service</div>
-  </div>
+    <h2 class="section-title">Trusted By</h2>
+    <div class="sponsors">
+        <div class="card">Corporate Events</div>
+        <div class="card">Private Clients</div>
+        <div class="card">Luxury Venues</div>
+    </div>
 </section>
 
-<section>
-  <h2>Client Reviews</h2>
-  <div class="review">“Best luxury transportation service in St. Louis. Immaculate vehicles and professional drivers.”</div>
-  <div class="review">“Top-tier experience every time. Highly recommend BlackLabel.”</div>
-  <div class="review">“Reliable, discreet, and premium. Exactly what executive travel should be.”</div>
-</section>
+<section class="contact">
+    <h2 class="section-title">Contact Us</h2>
 
-<section id="booking">
-  <div class="contact">
-    <h2>Request a Booking</h2>
-    <form>
-      <input type="text" placeholder="Full Name" required>
-      <input type="email" placeholder="Email Address" required>
-      <input type="tel" placeholder="Phone Number" required>
-      <input type="text" placeholder="Pickup Location" required>
-      <input type="text" placeholder="Drop-off Location" required>
-      <input type="datetime-local" required>
-      <textarea rows="4" placeholder="Additional Details"></textarea>
-      <button type="submit">Submit Request</button>
+    <!-- Replace YOUR_FORM_ID after creating Formspree -->
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+        <textarea name="message" placeholder="How can we assist you?" required></textarea>
+        <button type="submit">Request Service</button>
     </form>
-  </div>
-</section>
 
-<section>
-  <div class="contact">
-    <h2>Contact BlackLabel Sprinter Co.</h2>
-    <p>Email: info@blacklabelsprinterco.com</p>
-    <p>Phone: (Your Phone Number)</p>
-    <p>Serving St. Louis & Surrounding Missouri Counties</p>
-    <a href="mailto:info@blacklabelsprinterco.com" class="btn">Email Us Now</a>
-  </div>
+    <p style="margin-top:20px;">
+        Or email us directly at  
+        <a href="mailto:info@blacklabelsprinterco.com" class="gold">info@blacklabelsprinterco.com</a>
+    </p>
 </section>
 
 <footer>
-  © 2026 BlackLabel Sprinter Co. | St. Louis Luxury Chauffeur Transportation
+    © 2026 BlackLabel Sprinter Co. | Luxury Chauffeur Services | Missouri
 </footer>
 
 </body>
